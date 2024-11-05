@@ -1,0 +1,46 @@
+:root{
+    --background: #1e1e1e;
+    --text: #fff;
+    --theme: #b78fc1;
+    --theme-trans: rgba(183,143,193, .2);
+}
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+	width: 100%;
+	background-color: var(--background) !important;
+	color: var(--text) !important;
+}
+body {
+    max-width: 100% !important;
+    background-color: var(--background) !important;
+	color: var(--text) !important;
+}
+nav, #nav, .navbar-default, .navbar-static-top{
+    background-color: transparent !important;
+    background-image: none;
+}
+.nav{
+    margin: 0 !important;
+}
+.navbar-brand{
+    margin: 1rem !important;
+    color: var(--theme) !important;
+    text-shadow: none;
+}
+.btn-secondary{
+    color: var(--theme) !important;
+}
+
+.btn-primary{
+    background-image: none;
+    background: none !important;
+    border:1px var(--theme) solid !important;
+}
+
+.jumbotron{
+    background-color: var(--theme-trans) !important;
+}
+
+@media screen and (max-width: 800px){
+}
