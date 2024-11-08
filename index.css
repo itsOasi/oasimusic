@@ -20,6 +20,12 @@ nav, #nav, .navbar-default, .navbar-static-top{
     background-color: transparent !important;
     background-image: none;
 }
+#hero{
+	padding: 0% !important;
+	width: 100% !important;
+	height: 60vh !important;
+	margin-bottom: 5rem;
+}
 .nav{
     margin: 0 !important;
 }
@@ -41,6 +47,15 @@ nav, #nav, .navbar-default, .navbar-static-top{
 .jumbotron{
     background-color: var(--theme-trans) !important;
 }
-
+.song{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.song-details{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 @media screen and (max-width: 800px){
 }
