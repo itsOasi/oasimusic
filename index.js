@@ -49,7 +49,7 @@ function sortLatest(data, el_id) {
 }
 
 window.onload = () => {
-	fetch("http://localhost:8000/get_yt_data")
+	fetch("https://oasimusic-server-633278362352.us-central1.run.app/get_yt_data")
 		.then((response) => response.json())
 		.then((data) => {
 			get_latest(data)
