@@ -66,14 +66,13 @@ function get_download_url(desc){
 
 window.onload = () => {
 	document.querySelector("nav").style.backgroundColor = `rgba(30, 30, 30, ${(window.scrollY / 100)})`
-	fetch("http://192.168.0.234:8000/get_yt_data")
+	fetch("https://oasimusic-server-633278362352.us-central1.run.app/get_yt_data")
 		.then((response) => response.json())
 		.then((data) => {
 			get_latest(data)
 			get_popular(data)
 		})
 }
-
 window.onscroll = () => {
 	if (window.scrollY < 100) {
 		console.log("scrolling")
