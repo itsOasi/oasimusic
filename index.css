@@ -17,45 +17,122 @@ body {
 	color: var(--text) !important;
 }
 nav, #nav, .navbar-default, .navbar-static-top{
-    background-color: transparent !important;
+    background-color: transparent;
+	position: fixed;
+	width: 100vw !important;
+	margin: 0 !important;
     background-image: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	&>.spacer{
+		width: 100%;
+	}
+}
+.navbar-right{
+	margin: auto;
+}
+h1{
+	font-size: 4rem;
+}
+h2{
+	font-size: 3rem;
 }
 #hero{
-	padding: 0% !important;
+	padding: 2rem !important;
+	padding-top: 12vh !important;
+	padding-bottom: 5vh !important;
 	width: 100% !important;
 	height: 60vh !important;
 	margin-bottom: 5rem;
+	text-align: end !important;
+	&>.row{
+		margin: auto;
+	}
 }
 .nav{
     margin: 0 !important;
 }
 .navbar-brand{
-    margin: 1rem !important;
-    color: var(--theme) !important;
+    margin: auto;
+    color: var(--text) !important;
     text-shadow: none;
+	font-size: inherit !important;
+	padding: 0 !important;
+}
+.navbar-cta{
+	margin: auto;
 }
 .btn-secondary{
     color: var(--theme) !important;
+	text-decoration: underline;
 }
 
 .btn-primary{
     background-image: none;
     background: none !important;
     border:1px var(--theme) solid !important;
+	max-width: fit-content;
 }
 
 .jumbotron{
     background-color: var(--theme-trans) !important;
 }
 .song{
+	&>img{
+		width: 30vw;
+	}
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-bottom: 6rem;
 }
 .song-details{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	align-items: start;
+	max-width: 50%;
+	&>h1{
+		font-size: 3rem;
+	}
+	&>a{
+		font-size: 2rem;
+	}
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
+	h1{
+		font-size: 8rem;
+	}
+	h2{
+		font-size: 6rem;
+	}
+	.btn-primary, .btn-secondary{
+		font-size: 6rem !important;
+	}
+	.btn-primary{
+		border-width: .3rem !important;
+	}
+	#popular{
+		margin: 0 !important;
+		width: 100% !important;
+	}
+	.song{
+		&>img{
+			width: auto;
+		}
+		flex-direction: column !important;
+	}
+	.song-details{
+		max-width: 100% !important;
+		&>h1{
+			font-size: 6rem;
+		}
+		&>a{
+			font-size: 4rem;
+		}
+	}
+	#nav{
+		height: 10vh;
+	}
 }
