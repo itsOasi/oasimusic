@@ -73,6 +73,7 @@ window.onload = () => {
 			get_popular(data)
 		})
 }
+
 window.onscroll = () => {
 	if (window.scrollY < 100) {
 		console.log("scrolling")

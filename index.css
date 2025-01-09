@@ -103,10 +103,10 @@ h2{
 }
 @media screen and (max-width: 1000px){
 	h1{
-		font-size: 8rem;
+		font-size: 4rem;
 	}
 	h2{
-		font-size: 6rem;
+		font-size: 3rem;
 	}
 	.btn-primary, .btn-secondary{
 		font-size: 6rem !important;
